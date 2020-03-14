@@ -1,6 +1,4 @@
 const {version} = require("./../package.json");
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
 
 import DateRange from './packages/date-range/index';
 import Input from './packages/input/index';
@@ -17,7 +15,6 @@ const components = [
 ];
 
 const install = function (Vue, opts = {}) {
-    Vue.use(ElementUI);
     components.forEach(component => {
         Vue.component(component.name, component);
     });

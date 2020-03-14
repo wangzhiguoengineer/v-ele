@@ -1,7 +1,7 @@
 {
   "name": "v-ele",
   "description": "Vue封装ElementUI，快捷数据驱动开发。",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "private": false,
   "main": "dist/index.js",
   "typings": "dist/types/index.d.ts",
@@ -30,7 +30,6 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "element-ui": "^2.13.0",
     "typescript": "^3.8.3",
     "vue": "^2.6.11"
   },
