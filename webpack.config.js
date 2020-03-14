@@ -1,4 +1,6 @@
 const {VueLoaderPlugin} = require("vue-loader");
+const webpack = require('webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require("path");
 
 module.exports = {
@@ -7,12 +9,14 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: 'index.js',
-        library: "vEl",
+        library: "vEle",
         libraryTarget: "umd",
         umdNamedDefine: true
     },
     plugins: [
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
+        new UglifyJsPlugin()
     ],
     module: {
         rules: [
@@ -67,5 +71,4 @@ module.exports = {
     performance: {
         hints: false
     },
-    devtool: '#eval-source-map'
 };
