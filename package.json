@@ -1,7 +1,7 @@
 {
   "name": "v-el",
   "description": "Vue封装ElementUI，快捷数据驱动开发。",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -10,6 +10,23 @@
     "taobao-registry": "npm config set registry http://registry.npm.taobao.org",
     "public-registry": "npm config set registry https://registry.npmjs.org",
     "release": "npm run public-registry && npm run build && npm publish --access=public && npm run taobao-registry"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:wangzhiguoengineer/v-el.git"
+  },
+  "keywords": [
+    "ElementUI",
+    "Vue",
+    "Form",
+    "Table",
+    "VueForm",
+    "VueTable"
+  ],
+  "author": "wangzhiguo.engineer@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangzhiguoengineer/v-el/issues"
   },
   "dependencies": {
     "core-js": "^3.6.4",
