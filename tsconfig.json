@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "lib": [
+      "es2017",
+      "es7",
+      "es6",
+      "dom"
+    ],
+    "noImplicitAny": true,
+    "allowJs": true,
+    "checkJs": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "dist/types",
+    "declarationMap": true,
+    "preserveConstEnums": true,
+    "isolatedModules": true,
+    "outDir": "build",
+    "strict": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "listEmittedFiles": true,
+    "listFiles": false,
+    "pretty": true,
+    "inlineSources": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "diagnostics": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "keyofStringsOnly": true
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
