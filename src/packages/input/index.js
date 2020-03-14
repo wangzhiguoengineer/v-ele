@@ -1,7 +1,7 @@
-import vElInput from './src/input';
+import vEleInput from './src/input';
 
-vElInput.install = function (Vue) {
-    Vue.component(vElInput.name, vElInput);
+vEleInput.install = function (Vue) {
+    Vue.component(vEleInput.name, vEleInput);
 };
 
-export default vElInput;
+export default vEleInput;

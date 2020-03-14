@@ -25,13 +25,13 @@
 </template>
 
 <script>
-    import vElInput from './../../input/index';
-    import vElSelect from './../../select/index';
-    import vElDateRange from './../../date-range/index';
+    import vEleInput from './../../input/index';
+    import vEleSelect from './../../select/index';
+    import vEleDateRange from './../../date-range/index';
 
     export default {
-        name: "vElSearch",
-        components: {vElInput, vElSelect, vElDateRange},
+        name: "vEleSearch",
+        components: {vEleInput, vEleSelect, vEleDateRange},
         props: {
             options: {
                 response: {

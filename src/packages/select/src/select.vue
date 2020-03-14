@@ -26,7 +26,7 @@
 
 <script>
     export default {
-        name: "vElSelect",
+        name: "vEleSelect",
         data() {
             return {
                 value: null

@@ -1,7 +1,7 @@
-import vElSelect from './src/select';
+import vEleSelect from './src/select';
 
-vElSelect.install = function (Vue) {
-    Vue.component(vElSelect.name, vElSelect);
+vEleSelect.install = function (Vue) {
+    Vue.component(vEleSelect.name, vEleSelect);
 };
 
-export default vElSelect;
+export default vEleSelect;

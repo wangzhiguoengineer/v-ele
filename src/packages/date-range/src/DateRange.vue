@@ -15,7 +15,7 @@
 
 <script>
     export default {
-        name: "vElDateRange",
+        name: "vEleDateRange",
         data() {
             return {
                 pickerOptions: {

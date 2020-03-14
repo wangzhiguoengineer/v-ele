@@ -12,7 +12,7 @@
 
 <script>
     export default {
-        name: "vElInput",
+        name: "vEleInput",
         data() {
             return {
                 value: null

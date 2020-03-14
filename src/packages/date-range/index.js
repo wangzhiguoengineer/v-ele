@@ -1,7 +1,7 @@
-import vElDateRange from './src/DateRange';
+import vEleDateRange from './src/DateRange';
 
-vElDateRange.install = function (Vue) {
-    Vue.component(vElDateRange.name, vElDateRange);
+vEleDateRange.install = function (Vue) {
+    Vue.component(vEleDateRange.name, vEleDateRange);
 };
 
-export default vElDateRange;
+export default vEleDateRange;

@@ -41,7 +41,7 @@
 
 <script>
     export default {
-        name: "vElTable",
+        name: "vEleTable",
         props: {
             options: {
                 response: {

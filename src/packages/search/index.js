@@ -1,7 +1,7 @@
-import vElSearch from './src/search';
+import vEleSearch from './src/search';
 
-vElSearch.install = function (Vue) {
-    Vue.component(vElSearch.name, vElSearch);
+vEleSearch.install = function (Vue) {
+    Vue.component(vEleSearch.name, vEleSearch);
 };
 
-export default vElSearch;
+export default vEleSearch;

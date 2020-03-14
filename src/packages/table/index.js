@@ -1,7 +1,7 @@
-import vElTable from './src/table';
+import vEleTable from './src/table';
 
-vElTable.install = function (Vue) {
-    Vue.component(vElTable.name, vElTable);
+vEleTable.install = function (Vue) {
+    Vue.component(vEleTable.name, vEleTable);
 };
 
-export default vElTable;
+export default vEleTable;

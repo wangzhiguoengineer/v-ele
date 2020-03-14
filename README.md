@@ -3,14 +3,14 @@ Vue封装ElementUI，快捷数据驱动开发。
 
 ## Install
 ```
-npm install v-el -S
+npm install v-ele -S
 ```
 
 ## How to use it?
 ```
 <template>
     <div id="app">
-        <v-el-search :options="options" @search="search" @enter="search" @change="search"></v-el-search>
+        <v-ele-search :options="options" @search="search" @enter="search" @change="search"></v-ele-search>
     </div>
 </template>
 
