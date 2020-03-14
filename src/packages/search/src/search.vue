@@ -2,21 +2,21 @@
     <el-form class="form-search" ref="form-search" :model="options.response.search" :label-width="'0px'">
         <el-form-item v-for="(item,index) in options.items" :key="item.field + index" :index="index"
                       :class="'el-form-item-' + item.type">
-            <v-el-input v-if="item.type === 'input'" v-model="options.response.search[item.field]"
+            <v-ele-input v-if="item.type === 'input'" v-model="options.response.search[item.field]"
                         :item="item"
                         @change="inputChange(item,$event)"
                         @enter="inputEnter(item, $event)"
-            ></v-el-input>
-            <v-el-select v-if="item.type === 'select'"
+            ></v-ele-input>
+            <v-ele-select v-if="item.type === 'select'"
                          v-model="options.response.search[item.field]"
                          :item="item"
                          @remoteMethod="remoteMethod($event)"
                          @change="inputChange(item,$event)"
-            ></v-el-select>
-            <v-el-date-range v-if="item.type === 'daterange'"
+            ></v-ele-select>
+            <v-ele-date-range v-if="item.type === 'daterange'"
                              v-model="options.response.search[item.field]"
                              @change="inputChange(item,$event)"
-            ></v-el-date-range>
+            ></v-ele-date-range>
         </el-form-item>
         <el-form-item v-for="(item,index) in options.buttons" :key="item.event + index" :index="index">
             <el-button v-html="item.title" @click="buttonClick(item,$event)" :class="item.icon"></el-button>
