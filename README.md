@@ -38,7 +38,7 @@ npm install v-ele -S
         },
         methods: {
             search($event) {
-                this.$message.success(JSON.stringify(this.response));
+                this.$message.success(JSON.stringify(this.options.response));
             }
         }
     };
