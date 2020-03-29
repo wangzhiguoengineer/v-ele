@@ -86,22 +86,24 @@
 </script>
 
 <style scoped lang="scss">
-    .form-search {
-        text-align: left;
-        margin-bottom: 20px;
+    @media only screen and (min-width: 501px) {
+        .form-search {
+            text-align: left;
+            margin-bottom: 20px;
 
-        .el-form-item {
-            display: inline-block;
-            max-width: 180px;
-            margin-right: 10px;
-            margin-bottom: 10px;
+            .el-form-item {
+                display: inline-block;
+                max-width: 180px;
+                margin-right: 10px;
+                margin-bottom: 10px;
 
-            &.el-form-item-daterange {
-                width: 370px;
-                max-width: 100%;
+                &.el-form-item-daterange {
+                    width: 370px;
+                    max-width: 100%;
 
-                .el-range-editor.el-input__inner {
-                    width: 100%;
+                    .el-range-editor.el-input__inner {
+                        width: 100%;
+                    }
                 }
             }
         }
