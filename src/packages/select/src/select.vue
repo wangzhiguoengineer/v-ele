@@ -61,5 +61,7 @@
 </script>
 
 <style scoped>
-
+    .el-select {
+        width: 100%;
+    }
 </style>

@@ -61,5 +61,7 @@
 </script>
 
 <style scoped>
-
+    .el-date-picker {
+        width: 100%;
+    }
 </style>

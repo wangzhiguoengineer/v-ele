@@ -3,19 +3,19 @@
         <el-form-item v-for="(item,index) in options.items" :key="item.field + index" :index="index"
                       :class="'el-form-item-' + item.type">
             <v-ele-input v-if="item.type === 'input'" v-model="options.response.search[item.field]"
-                        :item="item"
-                        @change="inputChange(item,$event)"
-                        @enter="inputEnter(item, $event)"
+                         :item="item"
+                         @change="inputChange(item,$event)"
+                         @enter="inputEnter(item, $event)"
             ></v-ele-input>
             <v-ele-select v-if="item.type === 'select'"
-                         v-model="options.response.search[item.field]"
-                         :item="item"
-                         @remoteMethod="remoteMethod($event)"
-                         @change="inputChange(item,$event)"
+                          v-model="options.response.search[item.field]"
+                          :item="item"
+                          @remoteMethod="remoteMethod($event)"
+                          @change="inputChange(item,$event)"
             ></v-ele-select>
             <v-ele-date-range v-if="item.type === 'daterange'"
-                             v-model="options.response.search[item.field]"
-                             @change="inputChange(item,$event)"
+                              v-model="options.response.search[item.field]"
+                              @change="inputChange(item,$event)"
             ></v-ele-date-range>
         </el-form-item>
         <el-form-item v-for="(item,index) in options.buttons" :key="item.event + index" :index="index">
@@ -104,6 +104,21 @@
                     width: 100%;
                 }
             }
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .form-search {
+            text-align: left;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            width: calc(100vw - 20px);
+        }
+        .el-form-item {
+            max-width: 100%;
+            width: 100%;
         }
     }
 </style>
